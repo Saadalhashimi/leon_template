@@ -89,3 +89,50 @@ body{
 .header .links .icon span:last-child {
     width: 100%;
 }
+
+.header .links ul {
+   background-color: #f6f6f6;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   min-width: 200px;
+   position: absolute;
+   right: 0;
+   top: calc(100% + 10px);
+   display: none;
+   
+
+
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+
+}
+
+.header .links ul a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: .3s;
+    color: #333;
+
+}
+.header .links ul a:hover{
+    padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a{
+ border-bottom: 1px solid #ddd;
+}
+
+
+
