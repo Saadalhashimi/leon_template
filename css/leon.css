@@ -4,6 +4,11 @@
 box-sizing: border-box; 
 }
 
+:root{
+    --main-color:#10cab7;
+
+}
+
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -100,6 +105,7 @@ body{
    right: 0;
    top: calc(100% + 10px);
    display: none;
+   z-index: 1;
    
 
 
@@ -133,6 +139,75 @@ body{
 .header .links ul li:not(:last-child) a{
  border-bottom: 1px solid #ddd;
 }
+/*end header*/
+
+/*start landing section*/
+.landing{
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 64px);
+
+}
+.landing .intro-text{
+    position: absolute;
+    top :50%;
+    left: 50%;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    transform: translate(-50%,-50%);
+}
+.landing .intro-text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--main-color);
 
 
+}
 
+.landing .intro-text p{
+    font-size: 19px;
+    line-height: 1.8;
+
+}
+/*end landing section*/
+/*start features section*/
+.features{
+background-color: #f6f6f6;
+padding-top: 60px;
+padding-bottom: 60px;
+
+}
+
+.features .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 20px;
+   
+    
+    
+}
+.features .feat{
+    text-align: center;
+    padding: 20px;
+}
+
+.features .feat i{
+    color: var(--main-color);
+
+}
+.features .feat h3{
+ font-weight: 800;
+ margin: 30px o;
+
+}
+.features .feat p{
+    line-height: 1.8;
+    color: #777;
+    font-size: 18px;
+
+
+}
+/*end features section*/
